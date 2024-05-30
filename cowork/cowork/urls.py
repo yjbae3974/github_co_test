@@ -20,4 +20,5 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('list/', views.list, name='list'),
+    path('detail/<int:post_pk>', views.detail, name='detail'),
 ]
